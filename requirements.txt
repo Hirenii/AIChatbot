@@ -1,0 +1,14 @@
+aiohttp
+aiohttp-middlewares
+beautifulsoup4
+faiss-cpu
+google-genai
+langchain-community
+langchain-huggingface
+python-dotenv
+python-socketio
+requests
+streamlit
+sentence-transformers
+pandas
+openpyxl

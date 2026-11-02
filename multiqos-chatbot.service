@@ -1,0 +1,16 @@
+[Unit]
+Description=MultiQoS Chatbot Service
+After=network.target
+
+[Service]
+User=staging-server
+Group=staging-server
+WorkingDirectory=/home/staging-server/AI_DEMOS/multiqos-chatbot
+EnvironmentFile=/home/staging-server/AI_DEMOS/multiqos-chatbot/.env
+ExecStart=/home/staging-server/AI_DEMOS/multiqos-chatbot/venv/bin/python /home/staging-server/AI_DEMOS/multiqos-chatbot/app.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
+
